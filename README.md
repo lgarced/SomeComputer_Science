@@ -1,3 +1,11 @@
+```diff
+- text in red
++ text in green
+! text in orange
+# text in gray
+@@ text in purple (and bold)@@
+```
+
 Regex Tutorial on Matching a URL
 ![alt text](./Assets/computerscience)
 
@@ -6,8 +14,8 @@ Regular expressions, per definition, are a series of special characters that def
 Summary
 In this tutorial I'll be decribing how the regex for matching a URL works. The key topics that will be reflected on are the Anchors, Quantifiers, Grouping Constructs, Bracket Expressions, Character Classes, The OR Operator, Flags, and Character Escapes.
 Regex for Matching a URL : /^(https?://)?([\da-z.-]+).([a-z.]{2,6})([/\w .-])/?$/.
-
-Table of Contents
+```diff
++Table of Contents
 •	Anchors
 •	Quantifiers
 •	Grouping Constructs
