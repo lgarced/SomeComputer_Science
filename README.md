@@ -10,34 +10,39 @@ Summary
 In this tutorial I'll be decribing how the regex for matching a URL works. The key topics that will be reflected on are the Anchors, Quantifiers, Grouping Constructs, Bracket Expressions, Character Classes, The OR Operator, Flags, and Character Escapes.
 Regex for Matching a URL : /^(https?://)?([\da-z.-]+).([a-z.]{2,6})([/\w .-])/?$/.
 
-🟦 Table of Contents
-    🟪	Anchors
-    🟪	Quantifiers
-    🟪	Grouping Constructs
-    🟪  Bracket Expressions
-    🟪  Character Classes
-    🟪  The OR Operator
-    🟪  Flags
-    🟪  Character Escapes
 
-🟦 Regex Components
+###🟦 Table of Contents
 
-      ⏹ Anchors
+    *[🟪  Anchors](#section1)
+    *[🟪  Quantifiers](#section1)
+    *[🟪  Grouping Constructs](#section1)
+    *[🟪  Bracket Expressions](#section1)
+    *[🟪  Character Classes](#section1)
+    *[🟪  The OR Operator](#section1)
+    *[🟪  Flags](#section1)
+    *[🟪  Character Escapes](#section1)
+
+
+
+
+#<a name="section-1">🟦 Regex Components</a> Section 1
+
+    ⏹ Anchors
 
     The anchors used to contain this regular expression are: ^ to start, and $to finish.
     For our expression the start is looking for an http://
 
-      ⏹ Quantifiers
+    ⏹ Quantifiers
 
     Quantifiers set the limits of the string that your regex can match too. They frequently include the minimum and maximum number of characters that your  regex is looking for.
     In this regex the quantifiers are ? after the s that in the first grouping, which is saying there may be 1 or 0 s after the http, + inside the second  grouping, which is saying at least one or more of the characters in [\da-z\.-] may be present, {2,6} inside the third grouping, which matches the pattern from a minimum of 2 and a maximum of 6 number of times, and * inside the forth grouping, which is saying [\/\w \.-] may come up zero or more times
 
-      ⏹ Grouping Constructs
+    ⏹ Grouping Constructs
 
     The primary way you group a section of a regex is by using parentheses (). Breaking up the regex helps fulfil more complicated regex to check multiple parts of a string.
     In this expression there are four brackets: (https?:\/\/), ([\da-z\.-]+), ([a-z\.]{2,6}), ([\/\w \.-]*)
 
-     ⏹ Bracket Expressions
+    ⏹ Bracket Expressions
 
     Anything inside the set of square brackets [] represents a range of characters that needs to be matched. These Bracket Expressions are also known as Positive Character Groups because they outline the character we want to include.
     This regex includes multiple Bracket Expressions, an example of one would be [\da-z\.-] in the second grouping or [a-z\.] in the third grouping. The   [a-z\.] expression is saying to included anything from a-z and add a . add the end.
