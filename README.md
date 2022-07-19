@@ -1,7 +1,4 @@
 
-Regex Tutorial on Matching a URL
-
-
 ![alt text](./Assets/computerscience.jpg)
 
 
@@ -34,7 +31,7 @@ Regex for Matching a URL : /^(https?://)?([\da-z.-]+).([a-z.]{2,6})([/\w .-])/?$
 
     ⏹ Quantifiers
 
-    Quantifiers set the limits of the string that your regex can match too. They frequently include the minimum and maximum number of characters that your  regex is looking for.
+    Quantifiers set the limits of the string that your regex can match too. They frequently \n include the minimum and maximum number of characters that your  regex is looking for.
     In this regex the quantifiers are ? after the s that in the first grouping, which is saying there may be 1 or 0 s after the http, + inside the second  grouping, which is saying at least one or more of the characters in [\da-z\.-] may be present, {2,6} inside the third grouping, which matches the pattern from a minimum of 2 and a maximum of 6 number of times, and * inside the forth grouping, which is saying [\/\w \.-] may come up zero or more times
 
 <a name="section-2">⏹ Grouping Constructs</a>
